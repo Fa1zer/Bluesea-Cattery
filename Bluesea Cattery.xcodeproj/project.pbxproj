@@ -9,23 +9,21 @@
 /* Begin PBXBuildFile section */
 		E333C04228AA688B008D0DC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333C04128AA688B008D0DC7 /* AppDelegate.swift */; };
 		E333C04428AA688B008D0DC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333C04328AA688B008D0DC7 /* SceneDelegate.swift */; };
-		E333C04628AA688B008D0DC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333C04528AA688B008D0DC7 /* ViewController.swift */; };
-		E333C04928AA688B008D0DC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E333C04728AA688B008D0DC7 /* Main.storyboard */; };
-		E333C04C28AA688B008D0DC7 /* Bluesea_Cattery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E333C04A28AA688B008D0DC7 /* Bluesea_Cattery.xcdatamodeld */; };
+		E333C04628AA688B008D0DC7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333C04528AA688B008D0DC7 /* MainViewController.swift */; };
 		E333C04E28AA688E008D0DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E333C04D28AA688E008D0DC7 /* Assets.xcassets */; };
 		E333C05128AA688E008D0DC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E333C04F28AA688E008D0DC7 /* LaunchScreen.storyboard */; };
+		E333C06028AA6CAD008D0DC7 /* URLString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333C05F28AA6CAD008D0DC7 /* URLString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E333C03E28AA688B008D0DC7 /* Bluesea Cattery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bluesea Cattery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E333C04128AA688B008D0DC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E333C04328AA688B008D0DC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E333C04528AA688B008D0DC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E333C04828AA688B008D0DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E333C04B28AA688B008D0DC7 /* Bluesea_Cattery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bluesea_Cattery.xcdatamodel; sourceTree = "<group>"; };
+		E333C04528AA688B008D0DC7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E333C04D28AA688E008D0DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E333C05028AA688E008D0DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E333C05228AA688E008D0DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E333C05F28AA6CAD008D0DC7 /* URLString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +56,39 @@
 		E333C04028AA688B008D0DC7 /* Bluesea Cattery */ = {
 			isa = PBXGroup;
 			children = (
-				E333C04128AA688B008D0DC7 /* AppDelegate.swift */,
-				E333C04328AA688B008D0DC7 /* SceneDelegate.swift */,
-				E333C04528AA688B008D0DC7 /* ViewController.swift */,
-				E333C04728AA688B008D0DC7 /* Main.storyboard */,
-				E333C04D28AA688E008D0DC7 /* Assets.xcassets */,
-				E333C04F28AA688E008D0DC7 /* LaunchScreen.storyboard */,
-				E333C05228AA688E008D0DC7 /* Info.plist */,
-				E333C04A28AA688B008D0DC7 /* Bluesea_Cattery.xcdatamodeld */,
+				E333C05E28AA698C008D0DC7 /* Views */,
+				E333C05B28AA6951008D0DC7 /* Sources */,
+				E333C05A28AA6928008D0DC7 /* Supporting Files */,
 			);
 			path = "Bluesea Cattery";
+			sourceTree = "<group>";
+		};
+		E333C05A28AA6928008D0DC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E333C04128AA688B008D0DC7 /* AppDelegate.swift */,
+				E333C04328AA688B008D0DC7 /* SceneDelegate.swift */,
+				E333C04F28AA688E008D0DC7 /* LaunchScreen.storyboard */,
+				E333C05228AA688E008D0DC7 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E333C05B28AA6951008D0DC7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E333C04D28AA688E008D0DC7 /* Assets.xcassets */,
+				E333C05F28AA6CAD008D0DC7 /* URLString.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E333C05E28AA698C008D0DC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E333C04528AA688B008D0DC7 /* MainViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +151,6 @@
 			files = (
 				E333C05128AA688E008D0DC7 /* LaunchScreen.storyboard in Resources */,
 				E333C04E28AA688E008D0DC7 /* Assets.xcassets in Resources */,
-				E333C04928AA688B008D0DC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E333C04C28AA688B008D0DC7 /* Bluesea_Cattery.xcdatamodeld in Sources */,
-				E333C04628AA688B008D0DC7 /* ViewController.swift in Sources */,
+				E333C06028AA6CAD008D0DC7 /* URLString.swift in Sources */,
+				E333C04628AA688B008D0DC7 /* MainViewController.swift in Sources */,
 				E333C04228AA688B008D0DC7 /* AppDelegate.swift in Sources */,
 				E333C04428AA688B008D0DC7 /* SceneDelegate.swift in Sources */,
 			);
@@ -151,14 +171,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E333C04728AA688B008D0DC7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E333C04828AA688B008D0DC7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E333C04F28AA688E008D0DC7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,13 +303,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FY2MUX2TBL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Bluesea Cattery/Info.plist";
+				INFOPLIST_FILE = "Bluesea Cattery/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bluesea Cattery";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,13 +333,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FY2MUX2TBL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Bluesea Cattery/Info.plist";
+				INFOPLIST_FILE = "Bluesea Cattery/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bluesea Cattery";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,19 +378,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		E333C04A28AA688B008D0DC7 /* Bluesea_Cattery.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E333C04B28AA688B008D0DC7 /* Bluesea_Cattery.xcdatamodel */,
-			);
-			currentVersion = E333C04B28AA688B008D0DC7 /* Bluesea_Cattery.xcdatamodel */;
-			path = Bluesea_Cattery.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = E333C03628AA688B008D0DC7 /* Project object */;
 }
